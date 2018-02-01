@@ -88,7 +88,7 @@ public class AutonomousElapsedTimeBoxPattern extends LinearOpMode {
         mBR.setPower(-TURN_POWER);
 
         // Wait for TURN_TIME to elapse.
-        while (!opModeIsActive() && elapsedTime.time() < TURN_TIME) {
+        while (opModeIsActive() && elapsedTime.time() < TURN_TIME) {
             // Do nothing else, just wait.
         }
 
@@ -106,7 +106,7 @@ public class AutonomousElapsedTimeBoxPattern extends LinearOpMode {
         mBR.setPower(DRIVE_POWER);
 
         // Wait for DRIVE_TIME to elapse.
-        while (!opModeIsActive() && elapsedTime.time() < DRIVE_TIME) {
+        while (opModeIsActive() && elapsedTime.time() < DRIVE_TIME) {
             // Do nothing else, just wait.
         }
 
