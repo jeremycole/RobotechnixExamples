@@ -68,7 +68,9 @@ public class AutonomousStopImmediately extends LinearOpMode {
         return true;
     }
 
-    // The runOpMode() required by
+    // The runOpMode() required by the LinearOpMode class. In order to keep
+    // things as easy as possible to understand, just call a few other methods
+    // implemented below: doInitialization, doAutonomous, and doStopEverything.
     @Override
     public void runOpMode() throws InterruptedException {
         try {
