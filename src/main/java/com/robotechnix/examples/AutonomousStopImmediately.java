@@ -63,7 +63,7 @@ public class AutonomousStopImmediately extends LinearOpMode {
     // caught by runOpMode to stop the robot immediately. Check this anywhere
     // that you would have checked opModeIsActive()!
     private boolean shouldKeepRunning() {
-        if(!opModeIsActive())
+        if (!opModeIsActive())
             throw new StopImmediatelyException();
         return true;
     }
