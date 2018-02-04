@@ -69,7 +69,7 @@ public class AutonomousElapsedTimeBoxPattern extends LinearOpMode {
         mBR.setDirection(DcMotorSimple.Direction.REVERSE);
     }
 
-    private void doStop() {
+    private void doStopDriving() {
         // Stop movement.
         mFL.setPower(STOP_POWER);
         mBL.setPower(STOP_POWER);
@@ -93,7 +93,7 @@ public class AutonomousElapsedTimeBoxPattern extends LinearOpMode {
         }
 
         // Stop movement.
-        doStop();
+        doStopDriving();
     }
 
     private void doStraightDrive() {
@@ -111,7 +111,7 @@ public class AutonomousElapsedTimeBoxPattern extends LinearOpMode {
         }
 
         // Stop movement.
-        doStop();
+        doStopDriving();
     }
 
     @Override
@@ -148,7 +148,7 @@ public class AutonomousElapsedTimeBoxPattern extends LinearOpMode {
         doRightTurn();
 
         // Make sure the robot is stopped.
-        doStop();
+        doStopDriving();
 
         // Exit here by "falling off" the end of runOpMode() method, which
         // will end the program.
